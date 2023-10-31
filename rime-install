@@ -14,7 +14,7 @@ if [[ -z "${plum_dir}" ]]; then
 fi
 
 if ! [[ -e "${plum_dir}" ]]; then
-    git clone --depth 1 "https://github.com/${plum_repo}.git" "${plum_dir}"
+    git clone --depth 1 "git@github.com:${plum_repo}.git" "${plum_dir}"
 fi
 
 if ! [[ "$0" -ef "${plum_dir}"/rime-install ]]; then

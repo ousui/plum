@@ -22,7 +22,7 @@ resolve_package_name() {
     fi
 }
 
-package_url="https://github.com/$(resolve_package_name "${package_name}").git"
+package_url="git@github.com:$(resolve_package_name "${package_name}").git"
 
 git_version_greater_or_equal() {
     local target_major="$1"
